@@ -3,10 +3,36 @@
 
 ### Instalação sem suporte a GPU
 
-- Instalar e executar tensorflow, utilizando Jupyter notebook
-
+- Baixa imagem
 ```
-$ docker run -it -p 8888:8888 gcr.io/tensorflow/tensorflow
+$ docker pull gcr.io/tensorflow/tensorflow:latest
+``` 
+
+- Executar tensorflow 
+```
+$ docker run -it -p hostPort:containerPort IMAGE_NAME
+```
+
+- Exemplo 
+```
+docker run -it -p 8888:8888 -p 6006:6006 gcr.io/tensorflow/tensorflow bash
+```
+
+- Portas
+```
+8888 - Jupyter notebook
+6006 - TensorBoard
+```
+
+- Executar Jupyter
+```
+# cd /
+# ./run_jupyter.sh --allow-root 
+```
+
+- Executar TensorBoard
+```
+tensorboard --logdir=${PWD}
 ```
 
 ### Suporte a GPU
