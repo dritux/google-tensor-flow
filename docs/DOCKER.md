@@ -45,3 +45,8 @@ tensorboard --logdir=${PWD}
 ### Suporte a GPU
 - Para executar tensorflow com suporte a GPU, instalar o diver de suporte em [nvidia-docker](https://github.com/NVIDIA/nvidia-docker).
 
+
+
+### Referência
+
+(tensorflow-tutorial)[https://github.com/martinwicke/tensorflow-tutorial] 
