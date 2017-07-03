@@ -49,4 +49,4 @@ tensorboard --logdir=${PWD}
 
 ### Referência
 
-(tensorflow-tutorial)[https://github.com/martinwicke/tensorflow-tutorial] 
+[tensorflow-tutorial](https://github.com/martinwicke/tensorflow-tutorial) 
