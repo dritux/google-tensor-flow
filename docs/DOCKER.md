@@ -15,7 +15,14 @@ $ docker run -it -p hostPort:containerPort IMAGE_NAME
 
 - Exemplo 
 ```
-docker run -it -p 8888:8888 -p 6006:6006 gcr.io/tensorflow/tensorflow bash
+Executando e acessando o bash
+
+$ docker run -it -p 8888:8888 -p 6006:6006 gcr.io/tensorflow/tensorflow bash
+
+Montar pasta do projeto
+
+$ docker run  -v /data/tensor-flow-image:/tensor-flow-image -p 6006:6006 -p 8888:8888 -it tensorflow/tensorflow bash
+
 ```
 
 - Portas
